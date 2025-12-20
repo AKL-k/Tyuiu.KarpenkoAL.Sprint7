@@ -1,0 +1,182 @@
+﻿using System.Text;
+using Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib.DataModels;
+
+namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
+{
+    public class DataService
+    {
+        public List<Teacher> LoadTeachers(string path)
+        {
+            List<Teacher> teachers = new List<Teacher>();
+
+            if (!File.Exists(path))
+                throw new FileNotFoundException($"Файл не найден: {path}");
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                reader.ReadLine();
+
+                string? line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    string[] parts = line.Split(';');
+
+                    if (parts.Length >= 5)
+                    {
+                        Teacher teacher = new Teacher
+                        {
+                            TeacherId = int.Parse(parts[0]),
+                            FullName = parts[1],
+                            Address = parts[2],
+                            Position = parts[3],
+                            DepartmentId = int.Parse(parts[4])
+                        };
+
+                        teachers.Add(teacher);
+                    }
+                }
+            }
+
+            return teachers;
+        }
+
+        public List<Department> LoadDepartments(string path)
+        {
+            List<Department> departments = new List<Department>();
+
+            if (!File.Exists(path))
+                throw new FileNotFoundException($"Файл не найден: {path}");
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                reader.ReadLine();
+
+                string? line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    string[] parts = line.Split(';');
+
+                    if (parts.Length >= 3)
+                    {
+                        Department department = new Department
+                        {
+                            DepartmentId = int.Parse(parts[0]),
+                            DepartmentName = parts[1],
+                            HeadTeacherId = int.Parse(parts[2])
+                        };
+
+                        departments.Add(department);
+                    }
+                }
+            }
+
+            return departments;
+        }
+
+        public List<Course> LoadCourses(string path)
+        {
+            List<Course> courses = new List<Course>();
+
+            if (!File.Exists(path))
+                throw new FileNotFoundException($"Файл не найден: {path}");
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                reader.ReadLine();
+
+                string? line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    string[] parts = line.Split(';');
+
+                    if (parts.Length >= 5)
+                    {
+                        Course course = new Course
+                        {
+                            CourseCode = parts[0],
+                            CourseName = parts[1],
+                            HoursTotal = int.Parse(parts[2]),
+                            ControlType = parts[3],
+                            Section = parts[4]
+                        };
+
+                        courses.Add(course);
+                    }
+                }
+            }
+
+            return courses;
+        }
+
+        public List<TeachingAssignment> LoadAssignments(string path)
+        {
+            List<TeachingAssignment> assignments = new List<TeachingAssignment>();
+
+            if (!File.Exists(path))
+                throw new FileNotFoundException($"Файл не найден: {path}");
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                reader.ReadLine();
+
+                string? line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    string[] parts = line.Split(';');
+
+                    if (parts.Length >= 4)
+                    {
+                        TeachingAssignment assignment = new TeachingAssignment
+                        {
+                            AssignmentId = int.Parse(parts[0]),
+                            TeacherId = int.Parse(parts[1]),
+                            CourseCode = parts[2],
+                            RoomNumber = parts[3]
+                        };
+
+                        assignments.Add(assignment);
+                    }
+                }
+            }
+
+            return assignments;
+        }
+
+        public Teacher? GetTeacherById(List<Teacher> teachers, int teacherId)
+        {
+            return teachers.Find(t => t.TeacherId == teacherId);
+        }
+
+        public Department? GetDepartmentById(List<Department> departments, int departmentId)
+        {
+            return departments.Find(d => d.DepartmentId == departmentId);
+        }
+
+        public Course? GetCourseByCode(List<Course> courses, string courseCode)
+        {
+            return courses.Find(c => c.CourseCode == courseCode);
+        }
+
+        public List<TeachingAssignment> GetAssignmentsByTeacher(List<TeachingAssignment> assignments, int teacherId)
+        {
+            return assignments.FindAll(a => a.TeacherId == teacherId);
+        }
+
+        public List<TeachingAssignment> GetAssignmentsByCourse(List<TeachingAssignment> assignments, string courseCode)
+        {
+            return assignments.FindAll(a => a.CourseCode == courseCode);
+        }
+    }
+}
