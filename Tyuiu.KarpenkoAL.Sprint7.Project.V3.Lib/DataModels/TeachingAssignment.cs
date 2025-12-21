@@ -10,8 +10,8 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib.DataModels
     {
         public int AssignmentId { get; set; }
         public int TeacherId { get; set; }
-        public string? CourseCode { get; set; }
-        public string? RoomNumber { get; set; }
+        public string CourseCode { get; set; } = "";
+        public string RoomNumber { get; set; } = "";
 
         public TeachingAssignment() { }
     }
