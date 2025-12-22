@@ -53,7 +53,7 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3
         DataService ds = new DataService();
 
         private List<Teacher> teachers = new();
-        private List<Department> departments = new(); /// исправить поиск в текст бокс и сделать корректным отображение графика
+        private List<Department> departments = new(); 
         private List<Course> courses = new();
         private List<TeachingAssignment> assignments = new();
 
@@ -404,14 +404,10 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void buttonAbout_KAL_Click(object sender, EventArgs e) /// исправить позже
+        private void buttonAbout_KAL_Click(object sender, EventArgs e) 
         {
-            MessageBox.Show("Проект: Управление университетом\n" +
-                           "Автор: Карпенко А. Л.\n" +
-                           "Вариант: 0\n" +
-                           "Спринт 7",
-                           "О программе",
-                           MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FormAbout_KAL formAbout = new FormAbout_KAL();
+            formAbout.ShowDialog();
         }
 
         private void buttonAddTeacher_KAL_Click(object sender, EventArgs e)

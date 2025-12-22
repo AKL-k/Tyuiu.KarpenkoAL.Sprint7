@@ -16,5 +16,10 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3
         {
             InitializeComponent();
         }
+
+        private void buttonOK_KAL_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

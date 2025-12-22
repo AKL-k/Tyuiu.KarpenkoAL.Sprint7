@@ -118,53 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bullet_delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imageккк" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imageккк.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="загрое" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\загрое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="feeeeeeeeeeeer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\feeeeeeeeeeeer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chart_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chart_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bullet_delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bullet_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagef" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="загружное" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\загружное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imaged1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imaged1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bullet_add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bullet_add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="загружhhhhhhhhhенное" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\загружhhhhhhhhhенное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bullet_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bullet_delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imaged" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imaged.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="загруженнffffffffffffffffffffffffffffffffffffffffое" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\загруженнffffffffffffffffffffffffffffffffffffffffое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="загружhhhhhhhhhенное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\загружhhhhhhhhhенное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bullet_delete3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_delete3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bullet_add3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_add3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imageккк" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageккк.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="загружfffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeенное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\загружfffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeенное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="зе1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\зе1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imageкк" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageкк.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,28 +160,46 @@
   <data name="fr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imageкк" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imageкк.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chart_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bullet_add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bullet_add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imaged1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imaged1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="загружное" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\загружное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feeeeeeeeeeeer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feeeeeeeeeeeer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="загруженнffffffffffffffffffffffffffffffffffffffffое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\загруженнffffffffffffffffffffffffffffffffffffffffое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="зе" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\зе.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="загружfffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeенное" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\загружfffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeенное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="загруженное" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\загруженное.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bullet_add3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_add3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ffffeeeerrrrrrrrrr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ffffeeeerrrrrrrrrr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="загрое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\загрое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_delete3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_delete3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ffffeeeerrrrrrrrrr1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ffffeeeerrrrrrrrrr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
