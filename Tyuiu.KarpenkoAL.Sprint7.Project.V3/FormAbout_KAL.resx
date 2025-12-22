@@ -117,13 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTipMain_KAL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>267, 17</value>
-  </metadata>
-  <metadata name="openFileDialogLoadFile_KAL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog_KAL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>440, 17</value>
-  </metadata>
+  <data name="textBoxAbout_KAL.Text" xml:space="preserve">
+    <value>Разработчик: Карпенко А.Л.
+группа ИБКСб-25-1
+
+Программа разработана в рамках изучения языка C#
+
+Тюменский индустриальный университет 2025
+Высшая школа цифровых технологий 2025
+
+Внутренее имя: Tyuiu.KarpenkoAL.Sprint7.Project.V3
+
+</value>
+  </data>
 </root>

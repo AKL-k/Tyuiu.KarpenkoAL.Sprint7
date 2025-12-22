@@ -12,7 +12,7 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"Файл не найден: {path}");
 
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path, DetectEncoding(path)))
             {
                 reader.ReadLine();
 
@@ -50,7 +50,7 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"Файл не найден: {path}");
 
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path, DetectEncoding(path)))
             {
                 reader.ReadLine();
 
@@ -86,7 +86,7 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"Файл не найден: {path}");
 
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path, DetectEncoding(path)))
             {
                 reader.ReadLine();
 
@@ -124,7 +124,7 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"Файл не найден: {path}");
 
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path, DetectEncoding(path)))
             {
                 reader.ReadLine();
 
@@ -283,5 +283,26 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             return count;
         }
 
+        public static Encoding DetectEncoding(string filePath)
+        {
+            try
+            {
+                byte[] buffer = new byte[3];
+                using (FileStream fs = File.OpenRead(filePath))
+                    fs.Read(buffer, 0, 3);
+
+                if (buffer[0] == 0xEF && buffer[1] == 0xBB && buffer[2] == 0xBF)
+                    return Encoding.UTF8;
+            }
+            catch { }
+
+            return Encoding.GetEncoding(1251);
+
+        }
+
+        static DataService()
+        {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+        }
     }
 }
