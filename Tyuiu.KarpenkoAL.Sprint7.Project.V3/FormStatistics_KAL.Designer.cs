@@ -38,20 +38,20 @@
             textBoxHeader_KAL = new TextBox();
             panelMain_KAL = new Panel();
             groupBoxChart_KAL = new GroupBox();
+            chartMain_KAL = new System.Windows.Forms.DataVisualization.Charting.Chart();
             groupBoxStats_KAL = new GroupBox();
             textBoxStats_KAL = new TextBox();
             panelControls_KAL = new Panel();
             buttonLoadData_KAL = new Button();
             buttonRefresh_KAL = new Button();
             toolTipStats_KAL = new ToolTip(components);
-            chartMain_KAL = new System.Windows.Forms.DataVisualization.Charting.Chart();
             panelHeader_KAL.SuspendLayout();
             groupBoxHeader_KAL.SuspendLayout();
             panelMain_KAL.SuspendLayout();
             groupBoxChart_KAL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)chartMain_KAL).BeginInit();
             groupBoxStats_KAL.SuspendLayout();
             panelControls_KAL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)chartMain_KAL).BeginInit();
             SuspendLayout();
             // 
             // panelHeader_KAL
@@ -121,6 +121,23 @@
             groupBoxChart_KAL.TabStop = false;
             groupBoxChart_KAL.Text = "График распределения часов";
             // 
+            // chartMain_KAL
+            // 
+            chartArea1.Name = "ChartArea1";
+            chartMain_KAL.ChartAreas.Add(chartArea1);
+            chartMain_KAL.Dock = DockStyle.Fill;
+            legend1.Name = "Legend1";
+            chartMain_KAL.Legends.Add(legend1);
+            chartMain_KAL.Location = new Point(3, 23);
+            chartMain_KAL.Name = "chartMain_KAL";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartMain_KAL.Series.Add(series1);
+            chartMain_KAL.Size = new Size(911, 484);
+            chartMain_KAL.TabIndex = 0;
+            chartMain_KAL.Text = "chart1";
+            // 
             // groupBoxStats_KAL
             // 
             groupBoxStats_KAL.Controls.Add(textBoxStats_KAL);
@@ -185,23 +202,6 @@
             toolTipStats_KAL.IsBalloon = true;
             toolTipStats_KAL.ToolTipTitle = "Подсказка";
             // 
-            // chartMain_KAL
-            // 
-            chartArea1.Name = "ChartArea1";
-            chartMain_KAL.ChartAreas.Add(chartArea1);
-            chartMain_KAL.Dock = DockStyle.Fill;
-            legend1.Name = "Legend1";
-            chartMain_KAL.Legends.Add(legend1);
-            chartMain_KAL.Location = new Point(3, 23);
-            chartMain_KAL.Name = "chartMain_KAL";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartMain_KAL.Series.Add(series1);
-            chartMain_KAL.Size = new Size(911, 484);
-            chartMain_KAL.TabIndex = 0;
-            chartMain_KAL.Text = "chart1";
-            // 
             // FormStatistics_KAL
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -210,7 +210,7 @@
             Controls.Add(panelMain_KAL);
             Controls.Add(panelControls_KAL);
             Controls.Add(panelHeader_KAL);
-            MinimumSize = new Size(800, 600);
+            MinimumSize = new Size(1355, 777);
             Name = "FormStatistics_KAL";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Статистика университета | Карпенко А. Л.";
@@ -219,10 +219,10 @@
             groupBoxHeader_KAL.PerformLayout();
             panelMain_KAL.ResumeLayout(false);
             groupBoxChart_KAL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)chartMain_KAL).EndInit();
             groupBoxStats_KAL.ResumeLayout(false);
             groupBoxStats_KAL.PerformLayout();
             panelControls_KAL.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)chartMain_KAL).EndInit();
             ResumeLayout(false);
         }
 
