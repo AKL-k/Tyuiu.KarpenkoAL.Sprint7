@@ -154,49 +154,6 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             return assignments;
         }
 
-        public Teacher? GetTeacherById(List<Teacher> teachers, int teacherId)
-        {
-            return teachers.Find(t => t.TeacherId == teacherId);
-        }
-
-        public Department? GetDepartmentById(List<Department> departments, int departmentId)
-        {
-            return departments.Find(d => d.DepartmentId == departmentId);
-        }
-
-        public Course? GetCourseByCode(List<Course> courses, string courseCode)
-        {
-            return courses.Find(c => c.CourseCode == courseCode);
-        }
-
-        public List<TeachingAssignment> GetAssignmentsByTeacher(List<TeachingAssignment> assignments, int teacherId)
-        {
-            return assignments.FindAll(a => a.TeacherId == teacherId);
-        }
-
-        public List<TeachingAssignment> GetAssignmentsByCourse(List<TeachingAssignment> assignments, string courseCode)
-        {
-            return assignments.FindAll(a => a.CourseCode == courseCode);
-        }
-
-        public int[] GetTeachersCountByPosition(List<Teacher> teachers, string[] positions)
-        {
-            int[] counts = new int[positions.Length];
-
-            for (int i = 0; i < positions.Length; i++)
-            {
-                int count = 0;
-                foreach (Teacher teacher in teachers)
-                {
-                    if (teacher.Position == positions[i])
-                        count++;
-                }
-                counts[i] = count;
-            }
-
-            return counts;
-        }
-
         public int GetTotalHoursSum(List<Course> courses)
         {
             int sum = 0;
@@ -237,50 +194,6 @@ namespace Tyuiu.KarpenkoAL.Sprint7.Project.V3.Lib
             }
 
             return new int[] { min, max };
-        }
-
-        public int GetCoursesCountByControlType(List<Course> courses, string controlType)
-        {
-            int count = 0;
-            foreach (Course course in courses)
-            {
-                if (course.ControlType == controlType)
-                    count++;
-            }
-            return count;
-        }
-
-        public int GetTeacherTotalHours(int teacherId,
-                                       List<TeachingAssignment> assignments,
-                                       List<Course> courses)
-        {
-
-            List<string> teacherCourseCodes = new List<string>();
-            foreach (TeachingAssignment assignment in assignments)
-            {
-                if (assignment.TeacherId == teacherId)
-                    teacherCourseCodes.Add(assignment.CourseCode);
-            }
-
-            int totalHours = 0;
-            foreach (Course course in courses)
-            {
-                if (teacherCourseCodes.Contains(course.CourseCode))
-                    totalHours += course.HoursTotal;
-            }
-
-            return totalHours;
-        }
-
-        public int GetTeachersCountByDepartment(List<Teacher> teachers, int departmentId)
-        {
-            int count = 0;
-            foreach (Teacher teacher in teachers)
-            {
-                if (teacher.DepartmentId == departmentId)
-                    count++;
-            }
-            return count;
         }
 
         public static Encoding DetectEncoding(string filePath)
