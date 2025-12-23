@@ -213,12 +213,12 @@
             // 
             // groupBoxAssignments_KAL
             // 
+            groupBoxAssignments_KAL.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBoxAssignments_KAL.Controls.Add(panelAssignmentsControl_KAL);
             groupBoxAssignments_KAL.Controls.Add(dataGridViewAssignments_KAL);
-            groupBoxAssignments_KAL.Dock = DockStyle.Left;
             groupBoxAssignments_KAL.Location = new Point(875, 5);
             groupBoxAssignments_KAL.Name = "groupBoxAssignments_KAL";
-            groupBoxAssignments_KAL.Size = new Size(290, 390);
+            groupBoxAssignments_KAL.Size = new Size(317, 390);
             groupBoxAssignments_KAL.TabIndex = 3;
             groupBoxAssignments_KAL.TabStop = false;
             groupBoxAssignments_KAL.Text = "Нагрузка";
@@ -231,7 +231,7 @@
             panelAssignmentsControl_KAL.Dock = DockStyle.Top;
             panelAssignmentsControl_KAL.Location = new Point(3, 23);
             panelAssignmentsControl_KAL.Name = "panelAssignmentsControl_KAL";
-            panelAssignmentsControl_KAL.Size = new Size(284, 40);
+            panelAssignmentsControl_KAL.Size = new Size(311, 40);
             panelAssignmentsControl_KAL.TabIndex = 1;
             // 
             // buttonAddAssignment_KAL
@@ -280,7 +280,7 @@
             dataGridViewAssignments_KAL.ReadOnly = true;
             dataGridViewAssignments_KAL.RowHeadersVisible = false;
             dataGridViewAssignments_KAL.RowHeadersWidth = 51;
-            dataGridViewAssignments_KAL.Size = new Size(284, 323);
+            dataGridViewAssignments_KAL.Size = new Size(311, 323);
             dataGridViewAssignments_KAL.TabIndex = 0;
             // 
             // groupBoxCourses_KAL
@@ -555,7 +555,7 @@
             Controls.Add(panelMain_KAL);
             Controls.Add(panelTask_KAL);
             Controls.Add(panelButton_KAL);
-            MinimumSize = new Size(1000, 700);
+            MinimumSize = new Size(1218, 797);
             Name = "FormMain_KAL";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 7 | Проект | Вариант 3 | Карпенко А. Л.";

@@ -86,6 +86,7 @@
             Controls.Add(buttonOK_KAL);
             Controls.Add(pictureBoxAbout_KAL);
             Controls.Add(groupBox_KAL);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormAbout_KAL";
