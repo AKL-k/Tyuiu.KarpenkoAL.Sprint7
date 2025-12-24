@@ -66,9 +66,7 @@
             panelStats_KAL = new Panel();
             groupBoxStats_KAL = new GroupBox();
             textBoxStats_KAL = new TextBox();
-            openFileDialogLoadFile_KAL = new OpenFileDialog();
             toolTipMain_KAL = new ToolTip(components);
-            saveFileDialog_KAL = new SaveFileDialog();
             panelButton_KAL.SuspendLayout();
             panelTask_KAL.SuspendLayout();
             groupBoxTask_KAL.SuspendLayout();
@@ -532,19 +530,11 @@
             textBoxStats_KAL.TabIndex = 0;
             textBoxStats_KAL.Text = "Загрузите данные для отображения статистики...";
             // 
-            // openFileDialogLoadFile_KAL
-            // 
-            openFileDialogLoadFile_KAL.FileName = "openFileDialogLoadFile_KAL";
-            // 
             // toolTipMain_KAL
             // 
             toolTipMain_KAL.ForeColor = SystemColors.Highlight;
             toolTipMain_KAL.IsBalloon = true;
             toolTipMain_KAL.ToolTipTitle = "Подсказка";
-            // 
-            // saveFileDialog_KAL
-            // 
-            saveFileDialog_KAL.FileName = "saveFileDialog_KAL";
             // 
             // FormMain_KAL
             // 
@@ -606,8 +596,6 @@
         private GroupBox groupBoxAssignments_KAL;
         private DataGridView dataGridViewAssignments_KAL;
         private ToolTip toolTipMain_KAL;
-        private OpenFileDialog openFileDialogLoadFile_KAL;
-        private SaveFileDialog saveFileDialog_KAL;
         private Button buttonStatistics_KAL;
         private Panel panelTeachersControl_KAL;
         private TextBox textBoxSearchTeacher_KAL;
